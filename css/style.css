@@ -1,0 +1,67 @@
+.container{
+    display:grid;
+    height: 100%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+}
+
+.heading{
+    grid-column: 1 / -1;
+}
+
+.text{
+    grid-column: 1 / -1
+}
+
+.button{
+    grid-column: 6 / span 2;    
+}
+
+.creator{
+    grid-column: 1 / -1;
+}
+
+.button {
+    position:relative;
+}    
+.button:before {
+    content: "\25AE";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    left:20px;
+    position:absolute;
+    height: 20px;
+    width:20px;
+    margin-bottom: 5px;
+ }
+
+.heading{
+    color:blue;
+    text-align: center;
+    margin: 40px 40px;
+}
+
+.text{
+    text-align: center;
+    margin: 40px 40px;
+
+}
+
+.button{
+    background-color: aquamarine;
+    color:darkblue;
+    height: 30px;
+    width: 1fr;
+    border-radius: 40px;
+    margin: 40px 40px;
+
+}
+
+.creator{
+    color:blue;
+    font-size: 14px;
+    text-align: center;
+    line-height: 160%;
+    font-style: italic;
+    margin: 40px 40px;
+
+}
